@@ -1,17 +1,36 @@
 aid: hakimo
 name: Hakimo
-description: 'Hakimo is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Hakimo is a Menlo Park, California physical-security software company founded by Stanford AI
+  researchers Sam Joseph and Sagar Honnungar. Its AI platform sits on top of a customer's existing
+  camera, NVR/VMS and access-control estate and turns it into an autonomous security operations
+  capability: the AI Operator triages alarms and assigns a true-alarm probability, remote guarding
+  and SOC-as-a-Service provide 24/7 monitored response, and forensic search, weapon detection,
+  facial recognition, an insights dashboard and a mobile app round out the product line. Hakimo
+  integrates with roughly forty third-party systems (Genetec, Milestone, Avigilon, LenelS2, Eagle
+  Eye Networks, Axis, ServiceNow, Slack, Microsoft Teams, ONVIF devices) by consuming those
+  vendors' APIs. As of August 2026 Hakimo publishes no public developer program of its own: there
+  is no developer portal, no API reference, no OpenAPI or other machine-readable contract, and no
+  SDK. Its tenant application API is served same-origin from the customer portal and answers
+  unauthenticated requests with HTTP 401.
 url: https://raw.githubusercontent.com/api-evangelist/hakimo/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/622f8e0fdb05fd4848ac6e54/67e54813882a3277300d6605_Updated%20OG%20Image%20(1).jpg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Physical Security
+- Video Surveillance
+- Access Control
+- Artificial Intelligence
+- Computer Vision
+- Security Operations
+- Remote Guarding
+- Alarm Monitoring
+- Facility Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,44 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.hakimo.ai/
+- type: Blog
+  url: https://www.hakimo.ai/blog
+- type: PrivacyPolicy
+  url: https://www.hakimo.ai/privacy-policy
+- type: Support
+  url: https://www.hakimo.ai/contact-us
+- type: GitHubOrganization
+  url: https://github.com/hakimo-ai
+- type: Login
+  url: https://portal.hakimo.ai/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/hakimo
+- type: LLMsTxt
+  url: llms/hakimo-llms.txt
+- type: DomainSecurity
+  url: security/hakimo-domain-security.yml
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: >-
+    Hakimo's only API is the same-origin backend of its customer portal at
+    https://portal.hakimo.ai/v2/orm/, which answers unauthenticated requests with HTTP 401
+    {"message":"Invalid token"} behind a dedicated Auth0 tenant — there is no developer
+    portal, no API reference and no /pricing page anywhere on hakimo.ai, so the contract is
+    reachable only by an existing tenant.
+  evidence:
+  - url: https://portal.hakimo.ai/v2/orm/user/profile
+    status: 401
+  - url: https://support.hakimo.ai/
+    status: 522
+  - url: https://www.hakimo.ai/.well-known/api-catalog
+    status: 404
+  - url: https://www.hakimo.ai/pricing
+    status: 404
+  checked: '2026-08-22'

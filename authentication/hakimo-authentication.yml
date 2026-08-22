@@ -1,0 +1,78 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  https://portal.hakimo.ai/assets/env.js (public runtime config, HTTP 200),
+  https://hakimo.us.auth0.com/.well-known/openid-configuration (HTTP 200), and unauthenticated
+  GETs against https://portal.hakimo.ai/v2/orm/* (HTTP 401), all probed 2026-08-22.
+status: undocumented-by-provider
+scored: false
+note: >-
+  IMPORTANT — this artifact is NOT a claim that Hakimo documents its authentication. It does
+  not. There is no developer portal, no API reference and no auth page anywhere on hakimo.ai.
+  Everything below was established by probing public, unauthenticated surfaces; no credentials
+  were used and no access control was defeated. For that reason NO `Authentication` pointer is
+  wired into apis.yml — emitting one would credit Hakimo with published auth documentation it
+  has not published. This file exists so the measurement is on the record, not to move a score.
+surfaces:
+- name: Hakimo customer portal (tenant application API)
+  host: portal.hakimo.ai
+  base: https://portal.hakimo.ai/v2/orm/
+  public: false
+  documented: false
+  observed_challenge:
+    request: unauthenticated GET, no Authorization header
+    status: 401
+    content_type: application/json
+    body: '{"message":"Invalid token","status":401}'
+    www_authenticate: absent
+  note: >-
+    Same-origin backend of the Angular portal SPA. It is a first-party application API, not a
+    published integration API: no reference, no spec, no key issuance flow, no rate-limit or
+    error documentation. Individual operation paths are deliberately NOT enumerated here.
+identity_provider:
+  vendor: Auth0
+  tenant: hakimo.us.auth0.com
+  issuer: https://hakimo.us.auth0.com/
+  discovery: https://hakimo.us.auth0.com/.well-known/openid-configuration
+  discovery_status: 200
+  oauth_metadata: https://hakimo.us.auth0.com/.well-known/oauth-authorization-server
+  oauth_metadata_status: 200
+  audience: https://hakimo.ai/orm
+  client_id_public: HDsOi2UZ7NXiERiG16p1hWeWc73yJlFf
+  client_type: public SPA (no client secret; PKCE)
+  authorization_endpoint: https://hakimo.us.auth0.com/authorize
+  token_endpoint: https://hakimo.us.auth0.com/oauth/token
+  revocation_endpoint: https://hakimo.us.auth0.com/oauth/revoke
+  jwks_uri: https://hakimo.us.auth0.com/.well-known/jwks.json
+  device_authorization_endpoint: https://hakimo.us.auth0.com/oauth/device/code
+  code_challenge_methods_supported:
+  - S256
+  - plain
+  id_token_signing_alg_values_supported:
+  - HS256
+  - RS256
+  - PS256
+  grant_types_supported:
+  - client_credentials
+  - authorization_code
+  - refresh_token
+  - password
+  - implicit
+  - urn:ietf:params:oauth:grant-type:device_code
+  - urn:ietf:params:oauth:grant-type:token-exchange
+  - urn:ietf:params:oauth:grant-type:jwt-bearer
+  note: >-
+    A dedicated Auth0 tenant, i.e. OAuth 2.0 / OIDC bearer tokens carried as
+    `Authorization: Bearer <JWT>` against the audience https://hakimo.ai/orm. The scope set
+    advertised at the discovery endpoint is Auth0's stock OIDC set (openid, profile, email,
+    offline_access, ...); NO Hakimo-specific API scopes are published anywhere, so no
+    scopes/ artifact is derivable and none was written.
+  sso: >-
+    The portal exposes an SSO configuration surface to tenants, so enterprise customers
+    almost certainly federate their own IdP. Hakimo publishes no documentation of that setup.
+absent:
+- api-key-issuance-flow
+- published-scope-reference
+- published-token-lifetime
+- published-auth-documentation
+- machine-readable-security-schemes

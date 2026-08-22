@@ -1,0 +1,15 @@
+generated: '2026-08-22'
+method: searched
+source: >-
+  https://www.hakimo.ai/sitemap.xml (HTTP 200, walked in full) and
+  https://www.hakimo.ai/pricing (HTTP 404), probed 2026-08-22.
+plan_count: 0
+plans: []
+note: >-
+  Hakimo publishes no pricing or plans page of any kind. /pricing returns 404 and the
+  sitemap — which lists every product, industry, solution, careers and news page on the
+  site — contains no pricing, plans, packages or "how much" URL. The commercial motion is
+  entirely contact-sales: the site's only conversion paths are the "Book a Demo" and
+  /contact-us forms. This is an honest zero, recorded rather than omitted.
+commercial_model: contact-sales
+pricing_url: null

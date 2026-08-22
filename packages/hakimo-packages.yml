@@ -1,0 +1,24 @@
+generated: '2026-08-22'
+method: searched
+source: >-
+  npm registry search (registry.npmjs.org, HTTP 200), pypi.org/pypi/hakimo/json (HTTP 404),
+  and the GitHub organization api.github.com/orgs/hakimo-ai/repos (HTTP 200, 9 public repos),
+  all searched 2026-08-22.
+package_count: 0
+official_count: 0
+packages: []
+note: >-
+  Hakimo ships no first-party client library on any public registry. npm search for "hakimo"
+  returns no Hakimo-authored package; PyPI has no `hakimo` project; Maven Central, NuGet,
+  RubyGems, crates.io, Packagist and pkg.go.dev have no first-party Hakimo namespace. The
+  github.com/hakimo-ai organization has nine public repositories and every one is a fork of
+  someone else's project (signalr-client-py, Milestone MIP SDK samples, kns, sealed-secrets,
+  flux2, microk8s, stern, chroma, warp-zero-trust) — infrastructure tooling the team uses,
+  not a Hakimo SDK. Because there is no official SDK, NO `SDKs` pointer is wired into apis.yml.
+github_org:
+  url: https://github.com/hakimo-ai
+  status: 200
+  public_repos: 9
+  first_party_libraries: 0
+  most_recent_push: '2026-06-25'
+  note: All nine public repositories are forks of third-party open-source projects.

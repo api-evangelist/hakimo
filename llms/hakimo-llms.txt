@@ -1,0 +1,35 @@
+# www.hakimo.ai llms.txt
+
+- [AI Security for Property](https://www.hakimo.ai/industry/property-management): Promote Hakimo's AI-driven security solutions that reduce costs and enhance safety for property management.
+- [Hakimo AI Security Blog](https://www.hakimo.ai/blog): Share news, updates, case studies, and insights about Hakimo's AI security solutions and industry impact.
+- [Skanska AI Security Partnership](https://www.hakimo.ai/news/skanska-uses-new-ai-powered-security-monitoring-technology-at-i-405-brickyard-to-sr-527-improvement-project-jobsite): Announce Skanska's use of Hakimo's AI-powered security technology to enhance protection at a major construction site.
+- [AI Security for Universities](https://www.hakimo.ai/industry/universities): Showcase Hakimo's AI-driven security solutions enhancing safety and reducing costs for university campuses.
+- [Hakimo AI Security](https://www.hakimo.ai): Promote Hakimo's AI-powered security monitoring solution that integrates with existing systems for faster, cost-effective threat detection and response.
+- [Hakimo Secures Funding](https://www.hakimo.ai/news/hakimo-secures-10-5m-to-transform-physical-security-with-human-like-autonomous-security-agent): Announce Hakimo's $10.5M funding to develop AI-powered autonomous security agents transforming physical security.
+- [AI Security for Construction](https://www.hakimo.ai/industry/construction): Promote AI-powered security solutions for preventing theft and ensuring safety at construction sites.
+- [AI Security for Offices](https://www.hakimo.ai/industry/corporate-offices): Showcase AI-powered security solutions for protecting corporate offices and enhancing safety cost-effectively.
+- [Skanska AI Security Video](https://www.hakimo.ai/news/video-how-skanska-proactively-safeguards-major-infrastructure-with-hakimos-ai): Showcase how Skanska uses Hakimo's AI to proactively protect infrastructure projects from theft and security incidents.
+- [Hakimo Theft Prevention Video](https://www.hakimo.ai/news/video-matthew-reed-explains-how-hakimo-prevented-site-theft-on-george-reeds-project): Showcase how Hakimo's AI security prevented theft on a construction project through real-time monitoring.
+- [Curio Storage Security Case Study](https://www.hakimo.ai/news/video-how-curio-storage-slashed-break-ins-built-trust-with-hakimo): Showcase how Hakimo's AI-powered security reduced break-ins and increased tenant trust at Curio Storage.
+- [Hakimo Careers](https://www.hakimo.ai/careers): Showcase current job openings and career opportunities at Hakimo with details and application contacts.
+- [Hakimo AI Security Funding](http://www.hakimo.ai/news/hakimo-secures-10-5m-to-transform-physical-security-with-human-like-autonomous-security-agent): Announce Hakimo's $10.5M funding and AI-powered autonomous security agent transforming physical security monitoring.
+- [Enterprise AI Security](https://www.hakimo.ai/solution/enterprise): Offer AI-powered enterprise security solutions that enhance monitoring, reduce false alarms, and improve incident response.
+- [Hakimo AI Security Launch](https://www.hakimo.ai/news/hakimo-secures-10-5m-series-a-to-launch-ai-operator-redefining-physical-security): Announces Hakimo's $10.5M funding and launch of AI Operator transforming physical security.
+- [Hakimo AI Security Case Study](https://www.hakimo.ai/news/hakimos-ai-streamlines-security-and-compliance-for-a-fortune-500-manufacturer): Showcase how Hakimo's AI enhances security efficiency and compliance for a Fortune 500 manufacturer.
+- [Contact Hakimo](https://www.hakimo.ai/contact-us): Provide a contact form and company information for inquiries about Hakimo's AI security solutions.
+- [AI in Access Control](https://www.hakimo.ai/news/advanced-analytics-the-cool-tool-for-access-control): Explain how AI-driven advanced analytics enhance access control and physical security systems for proactive threat detection.
+- [Hakimo AI Security Blog](https://www.hakimo.ai/blog?e8559492_page=2): Share news, insights, and case studies about Hakimo's AI-driven security solutions and company updates.
+- [Hakimo AI Security](https://www.hakimo.ai/about): Introduce Hakimo's AI-driven security solutions and company mission to revolutionize physical security.
+- [Hakimo AI Security Highlights](https://www.hakimo.ai/catch-of-the-week): Showcase Hakimo's AI-powered automated security responses to real-world unauthorized and suspicious activities.
+- [AI Enhances Student Housing Security](https://www.hakimo.ai/news/video-student-housing-security-crisis-solved-hakimo-ai-cuts-costs-by-66-crime-by-90): Demonstrate how Hakimo's AI reduces student housing security costs and crime significantly.
+- [Understanding Business Losses](https://www.hakimo.ai/news/understanding-business-losses-and-their-implications): Explain types and impacts of business losses and promote Hakimo's AI security solutions for mitigation.
+- [AI Guards for Dealerships](https://www.hakimo.ai/news/ai-guards-a-smarter-team-for-safer-dealerships): Promote AI-powered remote guarding to enhance security and efficiency at automotive dealerships.
+- [AI Security for Self-Storage](https://www.hakimo.ai/industry/self-storage): Promote AI-driven remote security solutions for self-storage facilities to prevent intrusions and reduce costs.
+- [Hakimo at ISC West 2022](https://www.hakimo.ai/news/video-hakimo-at-isc-west-2022): Showcase Hakimo's AI security solutions and their presentation at ISC West 2022 through an interview video.
+- [AI Remote Guarding](https://www.hakimo.ai/solution/commercial): Promote Hakimo's AI-powered 24/7 remote security monitoring solutions for businesses.
+- [Prevent Auto Dealership Theft](https://www.hakimo.ai/news/your-million-dollar-inventory-is-at-risk): Promote Hakimo AI remote guarding to prevent auto dealership theft with proactive, real-time security technology.
+- [AI Security for Dealerships](https://www.hakimo.ai/industry/automotive-dealerships): Promote Hakimo's AI security solutions to prevent theft and enhance safety in automotive dealerships.
+- [Hakimo Customer Stories](https://www.hakimo.ai/customer-stories): Showcase customer success stories and testimonials highlighting Hakimo's AI security solutions.
+- [Hakimo Privacy Policy](https://www.hakimo.ai/privacy-policy): Explain Hakimo's data collection, usage, sharing, and privacy rights in providing security AI services.
+
+<!-- Unlock the full power of AI on your site by creating a free AI customer service agent at https://sitespeak.ai -->

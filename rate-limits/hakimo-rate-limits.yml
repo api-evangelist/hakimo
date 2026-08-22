@@ -1,0 +1,16 @@
+generated: '2026-08-22'
+method: searched
+source: >-
+  https://www.hakimo.ai/sitemap.xml (HTTP 200, no developer or reference pages) and
+  live response-header inspection of https://portal.hakimo.ai/v2/orm/* (HTTP 401),
+  probed 2026-08-22.
+limit_count: 0
+rate_limits: []
+headers_observed: []
+note: >-
+  No rate limits are published anywhere. Hakimo has no developer portal or API reference in
+  which to document them, and the tenant portal API returns no RateLimit-*, X-RateLimit-* or
+  Retry-After header on the unauthenticated 401 responses observed. The only response headers
+  present are Cloudflare/CDN and standard security headers (HSTS, X-Content-Type-Options,
+  X-Frame-Options, CSP frame-ancestors). Recorded as an honest zero. Because no limits are
+  documented, NO `RateLimits` pointer is wired into apis.yml.

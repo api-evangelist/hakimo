@@ -1,0 +1,107 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  Live unauthenticated GETs of /.well-known/* on every Hakimo-controlled host, 2026-08-22.
+note: >-
+  No Hakimo-controlled host serves a single /.well-known document. The apex and www hosts
+  (Webflow) return a 404 HTML body reading "Invalid .well-known request" for every path.
+  portal.hakimo.ai is an Angular single-page app whose catch-all route answers HTTP 200 with
+  the identical 1,185-byte application shell for every path probed — that is an SPA shell, not
+  a document, so every one of those 200s is recorded as a MISS. No WellKnown, SecurityTxt,
+  APICatalog or AgentCard pointer is emitted from this probe, because none of these documents
+  is actually served.
+hosts:
+- host: www.hakimo.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: hakimo.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+- host: portal.hakimo.ai
+  spa_catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    result: miss
+    note: SPA shell (text/html, 1185 bytes, identical to GET /) — not a document.
+  - path: /.well-known/openid-configuration
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+  - path: /.well-known/api-catalog
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+  - path: /.well-known/agent-card.json
+    status: 200
+    result: miss
+    note: SPA shell — not a document. No A2A agent card exists; nothing written to a2a/.
+  - path: /.well-known/agent.json
+    status: 200
+    result: miss
+    note: SPA shell — not a document (legacy pre-0.3 agent card path).
+  - path: /.well-known/mcp.json
+    status: 200
+    result: miss
+    note: SPA shell — not a document.
+identity_provider:
+  note: >-
+    Deliberately recorded OUTSIDE hosts[] so it is not scored as a Hakimo-served well-known
+    document. Hakimo's portal authenticates against a dedicated Auth0 tenant; the OIDC
+    discovery document below is served by Auth0 on auth0.com infrastructure, not by any host
+    Hakimo operates. It is evidence about Hakimo's auth model, not about Hakimo's own
+    /.well-known surface.
+  host: hakimo.us.auth0.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: application/json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: application/json
