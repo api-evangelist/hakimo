@@ -1,0 +1,14 @@
+{
+  "repo": "hakimo",
+  "feeds": [
+    {
+      "source": "https://www.hakimo.ai/",
+      "feed_url": "https://www.hakimo.ai/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-22T20:20:02Z"
+}
