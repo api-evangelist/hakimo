@@ -14,6 +14,17 @@ description: >-
   SDK. Its tenant application API is served same-origin from the customer portal and answers
   unauthenticated requests with HTTP 401.
 url: https://raw.githubusercontent.com/api-evangelist/hakimo/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/622f8e0fdb05fd4848ac6e54/67e54813882a3277300d6605_Updated%20OG%20Image%20(1).jpg
 x-type: company
 x-source: harvest:secondary-market
