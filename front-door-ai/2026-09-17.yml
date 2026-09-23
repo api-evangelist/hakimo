@@ -1,0 +1,25 @@
+# Front Door AI Index — hakimo — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: hakimo
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.hakimo.ai
+  final_host: www.hakimo.ai
+  ownership: own
+  owner: hakimo
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 16
+  host_score: 16
+  density: 12.6
+  words: 1270
+  tiers:
+    agentic: 0
+    core: 16
+    model: 0
+  ambiguous: 0
+  top_terms:
+    AI: 16
