@@ -75,6 +75,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/hakimo-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/hakimo-rate-limits.yml
 - type: Website
   url: https://www.hakimo.ai/
 - type: Blog
